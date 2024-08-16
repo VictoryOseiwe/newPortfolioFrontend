@@ -56,11 +56,7 @@ function ContactSection() {
             <Mail key={index} title={item.title} content={item.content} />
           ))}
         </div>
-        <form
-          data-aos="fade-left"
-          className="inputSection"
-          onSubmit={handleSubmit}
-        >
+        <form data-aos="fade-left" className="inputSection">
           <h2>
             <span className="gradient-text">Contact For Collaboration</span>
           </h2>
@@ -115,7 +111,7 @@ function ContactSection() {
             data-aos="fade-down"
             className="btn"
             type="submit"
-            onSubmit={(e) => e.target.reset()}
+            onSubmit={handleSubmit}
           >
             Submit
           </button>
