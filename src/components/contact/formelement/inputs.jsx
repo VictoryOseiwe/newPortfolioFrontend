@@ -13,6 +13,7 @@ function Inputs({ type, name, value, onChange, placeholder }) {
           name={name}
           value={value}
           onChange={onChange}
+          required
         />
       </div>
     </>
