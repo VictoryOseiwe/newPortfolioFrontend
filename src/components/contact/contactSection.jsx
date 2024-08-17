@@ -56,7 +56,11 @@ function ContactSection() {
             <Mail key={index} title={item.title} content={item.content} />
           ))}
         </div>
-        <form data-aos="fade-left" className="inputSection">
+        <form
+          data-aos="fade-left"
+          className="inputSection"
+          onSubmit={handleSubmit}
+        >
           <h2>
             <span className="gradient-text">Contact For Collaboration</span>
           </h2>
